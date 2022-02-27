@@ -30,12 +30,19 @@ The credentials should be io_user:io_password for a database named io_database.
 You can create required user and database by running the following commands:
 
 `sudo su postgres`
+
 `psql`
+
 `CREATE USER io_user ENCRYPTED PASSWORD 'io_password' LOGIN CREATEDB;`
+
 `\q`
+
 ctrl+D
+
 `psql postgresql://io_user:io_password@localhost/postgres`
+
 `CREATE DATABASE io_database;`
+
 `\q`
 
 
